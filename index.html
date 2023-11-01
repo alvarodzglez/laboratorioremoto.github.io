@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Laboratorio Remoto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Laboratorio remoto de imágenes hiperespectrales</h1>
+    <img src="logo.png" alt="Logo de la Universidad">
+  </header>
+  <div class="divider"></div>
+  <div class="container">
+    <div class="control">
+      <h1>Control</h1>
+      <div class="remote_control">
+        <div class="axis_control">
+          <h2>Eje Y</h2>
+          <button class="btn" id="y_up">↑</button>
+          <button class="btn" id="y_down">↓</button>
+        </div>
+        <div class="axis_control">
+          <h2>Eje Z</h2>
+          <button class="btn" id="z_backward">←</button>
+          <button class="btn" id="z_forward">→</button>
+        </div>
+        <div class="axis_control">
+          <h2>Eje X</h2>
+          <button class="btn" id="x_scan">Escanear</button>
+        </div>
+      </div>
+    </div>
+    <div class="video_container">
+      <h1>Transmisión en tiempo real</h1>
+      <div class="camera_feed">
+        <video id="camera1" autoplay></video>
+        <video id="camera2" autoplay></video>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
